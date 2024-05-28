@@ -1,3 +1,9 @@
+## 0.1.5 (2024-05-28)
+
+### Bug Fixes
+
+* install commander as dependency ([f40e534](https://github.com/gzzhanghao/git-blame-format/commit/f40e534cf754c340878c20b76b2a3b3f920c5275))
+
 ## 0.1.4 (2024-05-28)
 
 ### Bug Fixes
