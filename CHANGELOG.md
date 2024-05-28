@@ -1,3 +1,9 @@
+## 0.1.4 (2024-05-28)
+
+### Bug Fixes
+
+* add files in package.json ([03b587e](https://github.com/gzzhanghao/git-blame-format/commit/03b587e19adf10a67fe1b0f29ffc874c73fe77d0))
+
 ## 0.1.3 (2024-05-28)
 
 ### Bug Fixes
