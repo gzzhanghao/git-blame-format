@@ -36,7 +36,7 @@ jobs:
         run: pnpm build
 
       - if: ${{ steps.release.outputs.release_created }}
-        run: pnpm publish -r
+        run: pnpm publish --access public -r
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
