@@ -1,0 +1,48 @@
+{
+  "name": "git-blame-format",
+  "version": "0.1.0",
+  "homepage": "https://github.com/gzzhanghao/git-blame-format#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gzzhanghao/git-blame-format.git"
+  },
+  "main": "./dist/index.js",
+  "bin": {
+    "git-blame-format": "bin/index.js"
+  },
+  "scripts": {
+    "build": "swc src -d dist --strip-leading-paths",
+    "dev": "swc src -d dist -w --strip-leading-paths",
+    "lint": "eslint --ext .ts . && tsc --noEmit",
+    "prepare": "husky",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs}": [
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.3.0",
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "1.5.7",
+    "@swc/jest": "^0.2.36",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "chokidar": "^3.6.0",
+    "commander": "^12.1.0",
+    "eslint": "^9.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "globals": "^15.3.0",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.11.0"
+  }
+}
